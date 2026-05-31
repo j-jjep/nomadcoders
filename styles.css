@@ -28,64 +28,65 @@ body{
 
 .container{
     width:100%;
-    height:100vh;
-    position: relative;
-    z-index: 10;
-    padding:7vh 7vw 9vh 7vw;
+    min-height:100vh;
+    position:relative;
+    z-index:10;
+    padding:5vh 5vw 6vh 5vw;
 }
 
 .header{
     display:flex;
     align-items:center;
     justify-content:space-between;
-
-    margin-bottom:20px;
+    margin-bottom:18px;
 }
 
 .welcome{
     display:flex;
     align-items:center;
-    gap:20px;
+    gap:14px;
 }
 
 .welcome img{
-    width:170px;
+    width:120px;
 }
 
 #greeting{
-    font-size:70px;
+    font-size:48px;
     color:#2C4831;
     text-shadow:1px 1px 4px rgba(24, 65, 36, 0.65);
 }
 
 .login-area{
     display:flex;
-    gap:15px;
+    gap:10px;
 }
 
 .login-area input{
-    width:260px;
-    height:60px;
+    width:190px;
+    height:48px;
 
-    padding:9px 10px;
+    padding:8px 10px;
 
     font-family:"DungGeunMo";
-    font-size:23px;
+    font-size:18px;
 
     border:3px solid #2C4831;
 }
 
 #login-btn{
-    width:100px;
-    height:60px;
+    width:80px;
+    height:48px;
 
     font-family:"DungGeunMo";
-    font-size:23px;
+    font-size:18px;
     color:#2C4831;
     background:#F4F4EA;
 
     border:3px solid #2C4831;
-     box-shadow:3px 3px 4px rgba(24, 65, 36, 0.65);
+    box-shadow:3px 3px 4px rgba(24, 65, 36, 0.65);
+
+    cursor:pointer;
 }
 
 .dashboard{
@@ -96,14 +97,14 @@ body{
     2.4fr
     1.7fr;
 
-    gap:20px;
+    gap:18px;
 
-    height:calc(70vh - 40px);
+    height:calc(75vh - 30px);
 }
 
 .column{
     display:grid;
-    gap:20px;
+    gap:18px;
 }
 
 .column1{
@@ -131,7 +132,7 @@ section{
 
     box-shadow:3px 3px 4px rgba(24, 65, 36, 0.65);
 
-    padding:25px;
+    padding:18px;
 
     display:flex;
     flex-direction:column;
@@ -140,11 +141,11 @@ section{
 }
 
 h3{
-    margin-bottom:15px;
+    margin-bottom:12px;
 
     color:#436349;
 
-    font-size:25px;
+    font-size:20px;
 
     font-weight:normal;
 
@@ -152,53 +153,50 @@ h3{
 }
 
 .clock-card{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    padding: 15px 25px 50px 25px;
+    display:flex;
+    flex-direction:column;
+    height:100%;
+    padding:12px 18px 28px 18px;
 }
 
 .clock-card h3{
-    font-size: 25px;
-    color: #436349;
-    margin-bottom: 20px;
-    text-align: left;
-    padding-top: 15px;
+    font-size:20px;
+    color:#436349;
+    margin-bottom:16px;
+    text-align:left;
+    padding-top:10px;
 }
 
 #clock{
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    flex:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 
-    font-size: 80px;
-    color: #2C4831;
+    font-size:58px;
+    color:#2C4831;
 
-    border-bottom: 2px dashed #adc3b1;
+    border-bottom:2px dashed #adc3b1;
 }
 
 #date{
-    font-size: 30px;
-    color: #2C4831;
-    text-align: center;
+    font-size:22px;
+    color:#2C4831;
+    text-align:center;
 
-    padding-top: 40px;
-    padding-bottom: 10px;
+    padding-top:24px;
+    padding-bottom:6px;
 }
 
 .weather-top{
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
 }
 
 #city{
     color:#2C4831;
-
-    font-size:23px;
+    font-size:18px;
 }
 
 .weather-content{
@@ -217,59 +215,52 @@ h3{
 }
 
 #weather-icon{
-    width:180px;
-
+    width:130px;
     justify-self:center;
 }
 
 .weather-info{
     display:flex;
-
     flex-direction:column;
-
     align-items:center;
-
     text-align:center;
 }
 
 #temp{
-    font-size:50px;
+    font-size:38px;
 }
 
 #weather-desc{
-    margin-top:10px;
-
-    font-size:23px;
+    margin-top:8px;
+    font-size:18px;
 }
 
 .weather-detail{
     display:flex;
-
     flex-direction:column;
 
-    gap:25px;
+    gap:18px;
 
-    font-size:25px;
+    font-size:18px;
 
-    padding-left:30px;
+    padding-left:20px;
 
     border-left:2px dashed #adc3b1;
 }
 
 .quote-card{
     position:relative;
-
     justify-content:center;
 }
 
 .quote-card p{
     margin:auto;
 
-    max-width:75%;
+    max-width:80%;
 
     text-align:center;
 
-    font-size:35px;
+    font-size:26px;
 
     line-height:1.5;
 
@@ -277,7 +268,7 @@ h3{
 }
 
 .quote-card img{
-    width:100px;
+    width:70px;
 
     position:absolute;
 
@@ -307,11 +298,11 @@ h3{
 
     align-items:center;
 
-    margin-bottom:20px;
+    margin-bottom:16px;
 }
 
 #calendar-year{
-    font-size:25px;
+    font-size:20px;
 
     color:#7a927d;
 
@@ -319,13 +310,13 @@ h3{
 }
 
 #calendar-month{
-    font-size:45px;
+    font-size:34px;
 
     color:#2C4831;
 }
 
 #calendar{
-    width: 80%;
+    width:80%;
 }
 
 .calendar-table{
@@ -333,7 +324,7 @@ h3{
 
     border-collapse:separate;
 
-    border-spacing:6px;
+    border-spacing:5px;
 
     text-align:center;
 
@@ -341,20 +332,20 @@ h3{
 }
 
 .calendar-table th{
-    font-size:20px;
+    font-size:16px;
 
-    padding-bottom:10px;
+    padding-bottom:8px;
 }
 
 .calendar-table td{
-    width:42px;
-    height:42px;
+    width:34px;
+    height:34px;
 
     background:#e7eee3;
 
     border:2px solid #adc3b1;
 
-    font-size:18px;
+    font-size:15px;
 
     vertical-align:middle;
 }
@@ -379,14 +370,14 @@ h3{
 }
 
 .todo-top{
-    margin-bottom:15px;
+    margin-bottom:12px;
 }
 
 .todo{
     display:flex;
-    gap:15px;
+    gap:12px;
 
-    margin-bottom:15px;
+    margin-bottom:12px;
 }
 
 #todo-form{
@@ -395,12 +386,12 @@ h3{
 
 #todo-form input{
     width:100%;
-    height:55px;
+    height:48px;
 
-    padding:10px 15px;
+    padding:10px 14px;
 
     font-family:"DungGeunMo";
-    font-size:24px;
+    font-size:19px;
 
     border:3px solid #2C4831;
 
@@ -408,11 +399,11 @@ h3{
 }
 
 #add-btn{
-    width:170px;
-    height:55px;
+    width:120px;
+    height:48px;
 
     font-family:"DungGeunMo";
-    font-size:22px;
+    font-size:18px;
 
     color:#2C4831;
 
@@ -424,18 +415,18 @@ h3{
 }
 
 #todo-list{
-    margin-top:10px;
+    margin-top:8px;
 }
 
 #todo-list li{
     display:flex;
     align-items:center;
 
-    gap:18px;
+    gap:14px;
 
-    padding:14px 5px;
+    padding:12px 4px;
 
-    font-size:28px;
+    font-size:22px;
 
     color:#2C4831;
 
@@ -447,17 +438,17 @@ h3{
 }
 
 #todo-list input[type="checkbox"]{
-    width:26px;
-    height:26px;
+    width:22px;
+    height:22px;
 
     cursor:pointer;
 }
 
 #todo-list button{
-    width:32px;
-    height:32px;
+    width:28px;
+    height:28px;
 
-    font-size:22px;
+    font-size:18px;
 
     font-family:"DungGeunMo";
 
@@ -489,8 +480,8 @@ h3{
 }
 
 .youtube-card iframe{
-    width:85%;
-    height:85%;
+    width:90%;
+    height:90%;
 
     justify-self:center;
     align-self:center;
