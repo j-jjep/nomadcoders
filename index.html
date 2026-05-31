@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <header class="header">
+
+        <div class="welcome">
+            <img src="img/frog.png" alt="frog">
+            <p id="greeting">Welcome</p>
+        </div>
+
+        <div class="login-area">
+            <input
+                type="text"
+                id="nameInput"
+                placeholder="이름을 입력하세요"
+            >
+            <button id="login-btn">로그인</button>
+        </div>
+
+    </header>
+
+    <main class="dashboard">
+
+        <div class="column column1">
+
+            <section class="card clock-card">
+
+                <h3>실시간 시계</h3>
+
+                <div id="clock">00:00:00</div>
+
+                <p id="date"></p>
+
+            </section>
+
+            <section class="calendar-card">
+                <h3>달력</h3>
+
+                <div class="calendar-content">
+                
+                    <div class="calendar-header">
+                        <span id="calendar-year"></span>
+                        <span id="calendar-month"></span>
+                    </div>
+                
+                    <div id="calendar"></div>
+                
+                </div>
+            </section>
+
+        </div>
+
+        <div class="column column2">
+
+            <section class="card weather-card">
+
+                <div class="weather-top">
+
+                    <h3>오늘의 날씨</h3>
+
+                    <p id="city">위치 확인 중...</p>
+
+                </div>
+
+                <div class="weather-content">
+
+                    <img id="weather-icon" alt="weather">
+
+                    <div class="weather-info">
+
+                        <h2 id="temp">--℃</h2>
+
+                        <p id="weather-desc">
+                            불러오는 중...
+                        </p>
+
+                    </div>
+
+                    <div class="weather-detail">
+
+                        <span id="humidity">
+                            습도 --%
+                        </span>
+
+                        <span id="wind">
+                            풍속 --m/s
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="card todo-card">
+
+                <div class="todo-top">
+
+                    <h3>TODO LIST</h3>
+
+                </div>
+
+                <div class="todo">
+
+                    <form id="todo-form">
+
+                        <input
+                            type="text"
+                            id="todo-input"
+                            placeholder="할 일 추가"
+                        >
+
+                    </form>
+
+                    <button id="add-btn">
+                        ＋ 추가하기
+                    </button>
+
+                </div>
+
+                <ul id="todo-list"></ul>
+
+            </section>
+
+        </div>
+
+        <div class="column column3">
+
+            <section class="card quote-card">
+
+                <h3>한마디</h3>
+
+                <p id="line-1">
+                    "가장 중요한 것은 눈에 보이지 않아.
+                    마음으로 보아야만 정확하게 볼 수 있어."
+                </p>
+
+                <img
+                    src="img/flower.png"
+                    alt="flower"
+                >
+
+            </section>
+
+            <section class="card youtube-card">
+
+                <h3>추천 음악</h3>
+
+                <iframe
+                    id="youtube-player"
+                    src="https://www.youtube.com/embed/2Q2V7bG-myc"
+                    title="YouTube video player"
+                    allowfullscreen>
+                </iframe>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</div>
+
+<img id="foreground" scr="" alt="foreground">
+<img id="background" scr="" alt="background">
+
+<script src="main.js"></script>
+
+</body>
+</html>

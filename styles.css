@@ -1,0 +1,530 @@
+@font-face {
+    font-family: "DungGeunMo";
+    src: url("./font/NeoDunggeunmoPro-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+img{
+    image-rendering:pixelated;
+    image-rendering:crisp-edges;
+}
+
+body{
+    min-height:100vh;
+    font-family:"DungGeunMo";
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    position:relative;
+}
+
+.container{
+    width:100%;
+    height:100vh;
+    position: relative;
+    z-index: 10;
+    padding:7vh 7vw 9vh 7vw;
+}
+
+.header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    margin-bottom:20px;
+}
+
+.welcome{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.welcome img{
+    width:170px;
+}
+
+#greeting{
+    font-size:70px;
+    color:#2C4831;
+    text-shadow:1px 1px 4px rgba(24, 65, 36, 0.65);
+}
+
+.login-area{
+    display:flex;
+    gap:15px;
+}
+
+.login-area input{
+    width:260px;
+    height:60px;
+
+    padding:9px 10px;
+
+    font-family:"DungGeunMo";
+    font-size:23px;
+
+    border:3px solid #2C4831;
+}
+
+#login-btn{
+    width:100px;
+    height:60px;
+
+    font-family:"DungGeunMo";
+    font-size:23px;
+
+    color:#2C4831;
+    background:#F4F4EA;
+
+    border:3px solid #2C4831;
+     box-shadow:3px 3px 4px rgba(24, 65, 36, 0.65);
+}
+
+.dashboard{
+    display:grid;
+
+    grid-template-columns:
+    1.9fr
+    2.4fr
+    1.7fr;
+
+    gap:20px;
+
+    height:calc(70vh - 40px);
+}
+
+.column{
+    display:grid;
+    gap:20px;
+}
+
+.column1{
+    grid-template-rows:
+    1fr
+    1.5fr;
+}
+
+.column2{
+    grid-template-rows:
+    1fr
+    2fr;
+}
+
+.column3{
+    grid-template-rows:
+    0.8fr
+    1.3fr;
+}
+
+section{
+    background:#F4F4EA;
+
+    border:3px solid #2C4831;
+
+    box-shadow:3px 3px 4px rgba(24, 65, 36, 0.65);
+
+    padding:25px;
+
+    display:flex;
+    flex-direction:column;
+
+    overflow:hidden;
+}
+
+h3{
+    margin-bottom:15px;
+
+    color:#436349;
+
+    font-size:25px;
+
+    font-weight:normal;
+
+    text-align:left;
+}
+
+.clock-card{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 15px 25px 50px 25px;
+}
+
+.clock-card h3{
+    font-size: 25px;
+    color: #436349;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-top: 15px;
+}
+
+#clock{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 80px;
+    color: #2C4831;
+
+    border-bottom: 2px dashed #adc3b1;
+}
+
+#date{
+    font-size: 30px;
+    color: #2C4831;
+    text-align: center;
+
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.weather-top{
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+}
+
+#city{
+    color:#2C4831;
+
+    font-size:23px;
+}
+
+.weather-content{
+    flex:1;
+
+    display:grid;
+
+    grid-template-columns:
+    0.7fr
+    1fr
+    0.8fr;
+
+    align-items:center;
+
+    color:#2C4831;
+}
+
+#weather-icon{
+    width:180px;
+
+    justify-self:center;
+}
+
+.weather-info{
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+}
+
+#temp{
+    font-size:50px;
+}
+
+#weather-desc{
+    margin-top:10px;
+
+    font-size:23px;
+}
+
+.weather-detail{
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+    font-size:25px;
+
+    padding-left:30px;
+
+    border-left:2px dashed #adc3b1;
+}
+
+.quote-card{
+    position:relative;
+
+    justify-content:center;
+}
+
+.quote-card p{
+    margin:auto;
+
+    max-width:75%;
+
+    text-align:center;
+
+    font-size:35px;
+
+    line-height:1.5;
+
+    color:#2C4831;
+}
+
+.quote-card img{
+    width:100px;
+
+    position:absolute;
+
+    right:20px;
+    bottom:10px;
+}
+
+.calendar-card{
+    display:flex;
+    flex-direction:column;
+}
+
+.calendar-content{
+    flex:1;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+.calendar-header{
+    display:flex;
+    flex-direction:column;
+
+    align-items:center;
+
+    margin-bottom:20px;
+}
+
+#calendar-year{
+    font-size:25px;
+
+    color:#7a927d;
+
+    margin-bottom:4px;
+}
+
+#calendar-month{
+    font-size:45px;
+
+    color:#2C4831;
+}
+
+#calendar{
+    width: 80%;
+}
+
+.calendar-table{
+    width:100%;
+
+    border-collapse:separate;
+
+    border-spacing:6px;
+
+    text-align:center;
+
+    color:#2C4831;
+}
+
+.calendar-table th{
+    font-size:20px;
+
+    padding-bottom:10px;
+}
+
+.calendar-table td{
+    width:42px;
+    height:42px;
+
+    background:#e7eee3;
+
+    border:2px solid #adc3b1;
+
+    font-size:18px;
+
+    vertical-align:middle;
+}
+
+.calendar-table td.today{
+    background:#adc3b1;
+
+    color:white;
+
+    border:2px solid #2C4831;
+}
+
+.calendar-table td.empty{
+    background:transparent;
+
+    border:none;
+}
+
+.todo-card{
+    display:flex;
+    flex-direction:column;
+}
+
+.todo-top{
+    margin-bottom:15px;
+}
+
+.todo{
+    display:flex;
+    gap:15px;
+
+    margin-bottom:15px;
+}
+
+#todo-form{
+    flex:1;
+}
+
+#todo-form input{
+    width:100%;
+    height:55px;
+
+    padding:10px 15px;
+
+    font-family:"DungGeunMo";
+    font-size:24px;
+
+    border:3px solid #2C4831;
+
+    background:#fff;
+}
+
+#add-btn{
+    width:170px;
+    height:55px;
+
+    font-family:"DungGeunMo";
+    font-size:22px;
+
+    color:#2C4831;
+
+    background:#F4F4EA;
+
+    border:3px solid #2C4831;
+
+    cursor:pointer;
+}
+
+#todo-list{
+    margin-top:10px;
+}
+
+#todo-list li{
+    display:flex;
+    align-items:center;
+
+    gap:18px;
+
+    padding:14px 5px;
+
+    font-size:28px;
+
+    color:#2C4831;
+
+    border-bottom:2px dashed #adc3b1;
+}
+
+#todo-list li span{
+    flex:1;
+}
+
+#todo-list input[type="checkbox"]{
+    width:26px;
+    height:26px;
+
+    cursor:pointer;
+}
+
+#todo-list button{
+    width:32px;
+    height:32px;
+
+    font-size:22px;
+
+    font-family:"DungGeunMo";
+
+    color:#2C4831;
+
+    background:none;
+
+    border:none;
+
+    cursor:pointer;
+}
+
+.completed{
+    text-decoration:line-through;
+
+    opacity:0.45;
+}
+
+.youtube-card{
+    display:grid;
+
+    grid-template-rows:
+    auto
+    1fr;
+}
+
+.youtube-card h3{
+    text-align:left;
+}
+
+.youtube-card iframe{
+    width:85%;
+    height:85%;
+
+    justify-self:center;
+    align-self:center;
+}
+
+#background{
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    z-index:-2;
+}
+
+#foreground{
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    z-index:9999;
+
+    pointer-events:none;
+
+    image-rendering:pixelated;
+}
